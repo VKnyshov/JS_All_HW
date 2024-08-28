@@ -1,0 +1,60 @@
+.firstTask {
+    width: 70vw;
+    background-color: black;
+    font-family: sans-serif;
+    color: aqua;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+.withWhile {
+    font-size: 10px;
+    font-family: inherit;
+    color: #0931c1;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+.list {
+    width: 80vw;
+    color: red;
+    text-align: center;
+    padding-left: 20px;
+    background-color: yellow;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+.product-card {
+    height: 25vh;
+    width: 25vw;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.product-title {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+.true{
+    height: 10vh;
+    width: 40vw;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.true h3{
+    color: red;
+}
