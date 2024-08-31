@@ -1,5 +1,7 @@
 // #sH8c4er
-// - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
+// - Створити довільний елемент з id = text та створити кнопку.
+// Використовуючи JavaScript, зробіть так, щоб при натисканні
+// на кнопку зникав елемент з id="text".
 //
 // const button = document.getElementById('pm');
 // button.onclick = function () {
@@ -19,7 +21,7 @@
 // button.onclick = function () {
 //     let age = document.getElementById('inp').value;
 //     console.log(age);
-//     if (age < 18) {
+//     if (age < 18 ) {
 //         alert(`Вам ${age}! Користуватись сторінкою можуть лише повнолітні!`);
 //     } else if (age >= 18){
 //         alert (`Вам ${age} і цього достатньо, щоб дивитись на ніщо!`);
