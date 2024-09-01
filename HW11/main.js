@@ -31,11 +31,11 @@
 //                 onePr.style.color = 'yellow';
 //                 allPR.appendChild(onePr);
 //             }
-            // div.append(nameBasket, productInBasket);
-            // document.body.appendChild(div);
-        // }
-        // console.log(document.body.children)
-    // });
+// div.append(nameBasket, productInBasket);
+// document.body.appendChild(div);
+// }
+// console.log(document.body.children)
+// });
 //
 
 //     #whXxOBlYS0H
@@ -112,6 +112,9 @@ fetch('https://dummyjson.com/recipes')
 
             const pForUlIngredients = document.createElement('p');
             pForUlIngredients.innerText = 'List of ingredients:';
+            pForUlIngredients.style.fontWeight = '700'
+            pForUlIngredients.style.fontStyle = 'italic';
+
 
             const ulIngredients = document.createElement('ul');
             ulIngredients.style.fontStyle = 'italic';
@@ -122,7 +125,7 @@ fetch('https://dummyjson.com/recipes')
                 ulIngredients.appendChild(liIngredients)
                 divUlIngredients.append(pForUlIngredients, ulIngredients);
             }
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             const ulInstructions = document.createElement('ol');
 
             const cookingMethod = document.createElement('h3');
@@ -137,20 +140,20 @@ fetch('https://dummyjson.com/recipes')
             }
 
             const ulTagS = document.createElement('ul');
-                // ulTagS.innerText = `Tags:`
+            // ulTagS.innerText = `Tags:`
             ulTagS.style.display = 'flex'
             for (const oneTag of recipe.tags) {
-               const liTags = document.createElement('li');
+                const liTags = document.createElement('li');
                 liTags.innerText = `- ${oneTag} -`;
                 liTags.style.listStyleType = 'none'
                 liTags.style.color = 'gray'
-               ulTagS.appendChild(liTags)
+                ulTagS.appendChild(liTags)
             }
 
             divHarText.append(caloriesPerServing, cookTimeMinutes, cuisine, difficulty, mealType, prepTimeMinutes,
                 rating, reviewCount, servings, userId, divUlIngredients)
             divHar.append(img, divHarText)
-            divRecipe.append(h2Name, divHar,cookingMethod, ulInstructions, ulTagS )
+            divRecipe.append(h2Name, divHar, cookingMethod, ulInstructions, ulTagS)
 
             document.body.appendChild(divRecipe);
 
