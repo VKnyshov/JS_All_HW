@@ -79,8 +79,13 @@ fetch('https://dummyjson.com/recipes')
             img.style.height = '400px';
             img.style.paddingLeft = '20px';
 
-            const cookTimeMinutes = document.createElement('p');
+            const cookTimeMinutes = document.createElement('a');
+
             cookTimeMinutes.innerText = `Cook Time Minutes: ${recipe.cookTimeMinutes}`
+            cookTimeMinutes.href = 'https://rozdil.lviv.ua/anekdot/1/image47.jpg'
+            cookTimeMinutes.style.textDecoration = 'none'
+            cookTimeMinutes.style.color = 'black'
+
 
             const cuisine = document.createElement('p');
             cuisine.innerText = `Cuisine: ${recipe.cuisine}`
@@ -89,7 +94,7 @@ fetch('https://dummyjson.com/recipes')
             difficulty.innerText = `Difficulty: ${recipe.difficulty}`
 
             const mealType = document.createElement('p');
-            cookTimeMinutes.innerText = `Meal Type: ${recipe.mealType}`
+            mealType.innerText = `Meal Type: ${recipe.mealType}`
 
             const prepTimeMinutes = document.createElement('p');
             prepTimeMinutes.innerText = `Prep Time Minutes: ${recipe.prepTimeMinutes}`
@@ -99,7 +104,6 @@ fetch('https://dummyjson.com/recipes')
 
             const reviewCount = document.createElement('p');
             reviewCount.innerText = `Review Count: ${recipe.reviewCount}`
-
 
             const servings = document.createElement('p');
             servings.innerText = `Servings: ${recipe.servings}`
