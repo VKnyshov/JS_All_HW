@@ -49,10 +49,12 @@ fetch('https://dummyjson.com/recipes')
         for (const recipe of recipes) {
             console.log(recipe)
             const divRecipe = document.createElement('div');
-            // divRecipe.style.backgroundColor = 'red';
-            divRecipe.style.width = '800px';
+            divRecipe.style.width = '700px';
+            divRecipe.style.height = '1000px';
+
             divRecipe.style.border = '1px solid black';
             divRecipe.style.padding = '20px';
+
 
 
 
@@ -79,8 +81,8 @@ fetch('https://dummyjson.com/recipes')
 
             const img = document.createElement('img');
             img.src = recipe.image;
-            img.style.width = '500px';
-            img.style.height = '500px';
+            img.style.width = '400px';
+            img.style.height = '400px';
             img.style.paddingLeft = '20px';
 
 
@@ -166,12 +168,6 @@ fetch('https://dummyjson.com/recipes')
                 rating, reviewCount, servings, userId, divUlIngredients)
             divHar.append(img, divHarText)
             divRecipe.append(h2Name, divHar,cookingMethod, ulInstructions, ulTagS )
-
-
-            // tags
-            //     :
-            //     (2) ['Pizza', 'Italian']
-
 
             document.body.appendChild(divRecipe);
 
